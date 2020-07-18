@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: '微軟正黑體', '標楷體', monospace !important;
+}
+html{
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-fluid{
+    padding: 0;
+}
+.navbar,.footer{	
+    background-color: #f3e4c6;
+    /* background-color: #5469b646; */
+    z-index: 999;
+}
+.logo{
+    background-image: url(../images/Jouta.png);
+}
+.fixedMenu #main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.footer{
+    bottom: 0;
+    position: fixed;
+}

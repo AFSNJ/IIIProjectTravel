@@ -37,9 +37,12 @@ function searchFix(){
             search.classList.add("fix");
             search.style.top=header.offsetHeight+"px";
             document.querySelector("#replace").classList.add("col-3");
+            //  search.classList.remove("col-3");
+            //  $("#search").append("</div>");
         } else {
             search.classList.remove("fix");
             document.querySelector("#replace").classList.remove("col-3");
+            // search.classList.add("col-3");
             search.style.top=0+"px";
         }
     }
@@ -194,7 +197,7 @@ var frame = function () {
 
  
 document.body.addEventListener("click", function (event) {
-    if(event.clientY<=canvas.height+150&&event.clientX>=300&&event.clientX<=1600){
+    if(event.clientY<=canvas.height+150){
         var x = event.clientX,
         y = event.clientY;
         cleanUpArray();
